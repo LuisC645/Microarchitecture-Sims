@@ -12,10 +12,12 @@ Lab1_DSE_CortexA76.ipynb   informe y análisis (lee results/)
 dse.py                     motor del DSE: simulaciones en paralelo, NSGA-II y búsqueda aleatoria
 config/                    espacio.csv, semillas.csv y manuales.txt (lo que lee dse.py)
 scripts/                   sim.sh (una simulación a mano) y gem5toMcPAT_cortexA76.py (conversor gem5 -> McPAT)
-results/                   results.csv, random_log.csv y registros de las corridas
-crudos/                    datos crudos: dse/ (estación de trabajo) y manuales/ (PC personal)
-notas/                     notas de cada fase
+results/                   results.csv, random_log.csv y registros de runs
 figuras/                   figuras del informe
+workloads/
+test_lab/
+requirements.txt
+
 ```
 
 ## Reproducir el análisis
