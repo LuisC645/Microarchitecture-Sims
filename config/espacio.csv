@@ -1,0 +1,10 @@
+parametro,defecto,valores,comentario
+iq_entries,16,32;48;64;96,"cola de instrucciones; satura entre 48 y 64"
+width,4,3;4,"fetch = decode = rename = commit"
+rob_entries,128,64;96;128;192,"buffer de reordenamiento; 256 no aporta"
+lq_entries,68,32;48;68,"cola de cargas"
+sq_entries,72,32;48;72,"cola de almacenamientos"
+l1i_kb,64,16;32;64,"L1 de instrucciones (kB)"
+l1d_kb,64,16;32;64,"L1 de datos (kB)"
+l2_kb,256,128;256;512,"L2 (kB); >= 2 MB esta dominado"
+issue_width,8,3;4;6,"McPAT lo ve; 2 esta dominado"

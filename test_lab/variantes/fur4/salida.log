@@ -1,0 +1,12 @@
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.0.0.1
+gem5 compiled Oct 15 2026 00:28:55
+gem5 started Oct 17 2026 15:40:45
+gem5 executing on lucho, pid 573
+command line: ./build/ARM/gem5.fast -d /home/lucho/gem5/pruebas_lab1/variantes/fur4 scripts/CortexA76_scripts_gem5/CortexA76.py -c /home/lucho/gem5/workloads/mp3_enc/mp3_enc -o '/home/lucho/gem5/workloads/mp3_enc/mp3enc_testfile.wav mp3enc_outfile.mp3' --cwd=/home/lucho/gem5/pruebas_lab1/variantes/fur4 --num_fu_read=4
+
+Beginning simulation!
+Exiting @ tick 118453984208 because exiting with last active thread context

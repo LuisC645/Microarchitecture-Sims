@@ -1,0 +1,11 @@
+HOME=/home/administrador
+CPU(s):                                  12
+Model name:                              Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      6
+CPU(s) scaling MHz:                      27%
+12
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       2.9Gi        22Gi        67Mi       6.0Gi        28Gi
+Swap:          511Mi          0B       511Mi
+Python 3.12.3

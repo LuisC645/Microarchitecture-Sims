@@ -1,0 +1,69 @@
+McPAT (version 1.3 of Feb, 2015) is computing the target processor...
+ 
+
+McPAT (version 1.3 of Feb, 2015) results (current print level is 1, please increase print level to see the details in components): 
+*****************************************************************************************
+  Technology 22 nm
+  Using Long Channel Devices When Appropriate
+  Interconnect metal projection= aggressive interconnect technology projection
+  Core clock Rate(MHz) 2100
+
+*****************************************************************************************
+Processor: 
+  Area = 35.083 mm^2
+  Peak Power = 38.0292 W
+  Total Leakage = 0.539811 W
+  Peak Dynamic = 37.4894 W
+  Subthreshold Leakage = 0.529785 W
+  Gate Leakage = 0.0100258 W
+  Runtime Dynamic = 1.95352 W
+
+  Total Cores: 1 cores 
+  Device Type= ITRS high performance device type
+    Area = 28.4656 mm^2
+    Peak Dynamic = 33.2879 W
+    Subthreshold Leakage = 0.378623 W
+    Gate Leakage = 0.00639821 W
+    Runtime Dynamic = 1.57611 W
+
+  Total L3s: 
+  Device Type= ITRS high performance device type
+    Area = 3.44873 mm^2
+    Peak Dynamic = 0.363273 W
+    Subthreshold Leakage = 0.086014 W
+    Gate Leakage = 0.00189901 W
+    Runtime Dynamic = 5.65918e-05 W
+
+  Total First Level Directory: 
+  Device Type= ITRS high performance device type
+    Area = 0.0981263 mm^2
+    Peak Dynamic = 0.0171798 W
+    Subthreshold Leakage = 0.00271355 W
+    Gate Leakage = 0.000105986 W
+    Runtime Dynamic = 0.000681982 W
+
+  Total Second Level Directory: 
+  Device Type= ITRS high performance device type
+    Area = 2.44768 mm^2
+    Peak Dynamic = 0.0158601 W
+    Subthreshold Leakage = 0.0590133 W
+    Gate Leakage = 0.0014502 W
+    Runtime Dynamic = 3.5897e-05 W
+
+  Total NoCs (Network/Bus): 
+  Device Type= ITRS high performance device type
+    Area = 0.0375454 mm^2
+    Peak Dynamic = 0.0465844 W
+    Subthreshold Leakage = 0.00121941 W
+    Gate Leakage = 3.37329e-05 W
+    Runtime Dynamic = 0.000121037 W
+
+  Total MCs: 1 Memory Controllers 
+  Device Type= ITRS high performance device type
+    Area = 0.585266 mm^2
+    Peak Dynamic = 3.75856 W
+    Subthreshold Leakage = 0.00220167 W
+    Gate Leakage = 0.000138626 W
+    Runtime Dynamic = 0.376512 W
+
+*****************************************************************************************

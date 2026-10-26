@@ -1,0 +1,46 @@
+# Simulaciones manuales. Una por línea, campos separados por ';':
+#   nombre ; cambios respecto al A76 por defecto (clave=valor separados por coma; vacío = sin cambios) ; CPI ; potencia (W) ; energía ; EDP ; área (mm2)
+# Las claves que empiezan por x_ son parámetros de gem5 fuera del espacio del DSE (puertos, predictor, wb/dispatch).
+# Para añadir una simulación nueva, agrega una línea y ejecuta:  python3 dse.py import
+
+sim1 ;  ; 1.045577 ; 2.168 ; 2.26681 ; 2.37013 ; 35.5383
+ancho2 ; width=2 ; 1.092134 ; 2.0775 ; 2.26893 ; 2.47797 ; 35.5238
+fur4 ; x_num_fu_read=4 ; 1.043534 ; 2.1665 ; 2.26077 ; 2.35919 ; 35.5383
+fuw2 ; x_num_fu_write=2 ; 1.047313 ; 2.1656 ; 2.26804 ; 2.37535 ; 35.5383
+lq96 ; lq_entries=96 ; 1.045577 ; 2.172 ; 2.27096 ; 2.37446 ; 35.5436
+rob256 ; rob_entries=256 ; 1.045533 ; 2.2494 ; 2.35177 ; 2.45886 ; 36.521
+sq96 ; sq_entries=96 ; 1.045595 ; 2.1742 ; 2.27335 ; 2.377 ; 35.5428
+bp_tage ; x_branch_predictor_type=8 ; 1.026128 ; 2.1681 ; 2.22479 ; 2.28292 ; 35.5383
+iq32 ; iq_entries=32 ; 0.864596 ; 2.46 ; 2.12687 ; 1.83888 ; 35.5389
+iq64 ; iq_entries=64 ; 0.847006 ; 2.5208 ; 2.13517 ; 1.80851 ; 35.5415
+lq32 ; lq_entries=32 ; 1.045585 ; 2.162 ; 2.26055 ; 2.3636 ; 35.5306
+rob64 ; rob_entries=64 ; 1.045596 ; 2.1363 ; 2.23373 ; 2.33558 ; 35.1608
+sq32 ; sq_entries=32 ; 1.045939 ; 2.1558 ; 2.25487 ; 2.35846 ; 35.5298
+iq8 ; iq_entries=8 ; 1.428222 ; 1.8204 ; 2.59991 ; 3.71325 ; 35.5383
+iq128 ; iq_entries=128 ; 0.8472 ; 2.5515 ; 2.16161 ; 1.83131 ; 35.6641
+iq64_ancho2 ; iq_entries=64,width=2 ; 0.974708 ; 2.2387 ; 2.18204 ; 2.12686 ; 35.527
+iq64_lqsq32 ; iq_entries=64,lq_entries=32,sq_entries=32 ; 0.858842 ; 2.4711 ; 2.12229 ; 1.82271 ; 35.5253
+iq64_rob256 ; iq_entries=64,rob_entries=256 ; 0.846659 ; 2.6232 ; 2.22096 ; 1.88039 ; 36.5242
+iq64_rob64 ; iq_entries=64,rob_entries=64 ; 0.862933 ; 2.4404 ; 2.10588 ; 1.81724 ; 35.164
+f2_l1i16 ; iq_entries=64,l1i_kb=16 ; 0.849052 ; 2.5054 ; 2.12725 ; 1.80615 ; 35.438
+f2_l1i32 ; iq_entries=64,l1i_kb=32 ; 0.846995 ; 2.5142 ; 2.12949 ; 1.80366 ; 35.4615
+f2_l1i128 ; iq_entries=64,l1i_kb=128 ; 0.844739 ; 2.5348 ; 2.14125 ; 1.8088 ; 35.621
+f2_l1d16 ; iq_entries=64,l1d_kb=16 ; 0.850667 ; 2.4952 ; 2.12261 ; 1.80564 ; 35.4282
+f2_l1d32 ; iq_entries=64,l1d_kb=32 ; 0.848011 ; 2.5055 ; 2.12469 ; 1.80176 ; 35.4669
+f2_l1d128 ; iq_entries=64,l1d_kb=128 ; 0.846237 ; 2.597 ; 2.19768 ; 1.85976 ; 35.8893
+f2_l2_256k ; iq_entries=64,l2_kb=256 ; 0.847006 ; 2.5208 ; 2.13517 ; 1.80851 ; 35.5415
+f2_l2_512k ; iq_entries=64,l2_kb=512 ; 0.845189 ; 2.5447 ; 2.15073 ; 1.81777 ; 35.9101
+f2_l2_2m ; iq_entries=64,l2_kb=2048 ; 0.84487 ; 2.662 ; 2.24903 ; 1.90014 ; 38.3152
+f2_l2_4m ; iq_entries=64,l2_kb=4096 ; 0.844916 ; 2.8198 ; 2.38253 ; 2.01304 ; 42.6
+f2_ancho3 ; iq_entries=64,width=3 ; 0.957073 ; 2.2841 ; 2.18609 ; 2.09224 ; 35.5334
+f2_ancho5 ; iq_entries=64,width=5 ; 0.847138 ; 2.5447 ; 2.1557 ; 1.82617 ; 35.5505
+f2_ancho6 ; iq_entries=64,width=6 ; 0.846968 ; 2.5724 ; 2.17878 ; 1.84535 ; 35.5624
+f2_iq48 ; iq_entries=48 ; 0.850502 ; 2.5046 ; 2.13015 ; 1.8117 ; 35.5403
+f2_iq96 ; iq_entries=96 ; 0.847186 ; 2.5366 ; 2.149 ; 1.8206 ; 35.6012
+f2_a5wb5 ; iq_entries=64,width=5,x_wb_width=5 ; 0.846881 ; 2.5456 ; 2.15585 ; 1.82575 ; 35.5505
+f2_a6wb6 ; iq_entries=64,width=6,x_wb_width=6 ; 0.847414 ; 2.5729 ; 2.18033 ; 1.84764 ; 35.5624
+f2_disp4 ; iq_entries=64,x_dispatch_width=4 ; 0.847006 ; 2.5208 ; 2.13517 ; 1.80851 ; 35.5415
+f2_issue2 ; iq_entries=64,issue_width=2 ; 0.877459 ; 2.4227 ; 2.12585 ; 1.86535 ; 34.9447
+f2_issue3 ; iq_entries=64,issue_width=3 ; 0.850355 ; 2.4783 ; 2.10745 ; 1.79208 ; 35.0052
+f2_issue4 ; iq_entries=64,issue_width=4 ; 0.847317 ; 2.4933 ; 2.11264 ; 1.79008 ; 35.083
+f2_issue6 ; iq_entries=64,issue_width=6 ; 0.847151 ; 2.5073 ; 2.12409 ; 1.79943 ; 35.2797

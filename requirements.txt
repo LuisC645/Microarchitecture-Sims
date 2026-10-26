@@ -1,0 +1,7 @@
+# Para ejecutar el notebook (análisis de results/)
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+jupyterlab>=4.0
+# Solo para relanzar el DSE (dse.py nsga / random)
+pymoo>=0.6
